@@ -71,6 +71,7 @@ class _CustomAdjustHeaderIndexState extends State<CustomAdjustHeaderIndex> {
     }
 
     return ReorderableRow(
+      scrollController: ScrollController(),
       crossAxisAlignment: CrossAxisAlignment.start,
       children: _columns,
       onReorder: _onReorder,
